@@ -92,13 +92,13 @@ class TestCity_instantiation(unittest.TestCase):
         ct = City(None)
         self.assertNotIn(None, ct.__dict__.values())
 
-    #def test_instantiation_with_kwargs(self):
-        #dt = datetime.today()
-        #dt_iso = dt.isoformat()
-        #ct = City(id="678", created_at=dt_iso, updated_at=dt_iso)
-        #self.assertEqual(ct.id, "678")
-        #self.assertEqual(ct.created_at, dt)
-        #self.assertEqual(ct.updated_at, dt)
+    def test_instantiation_with_kwargs(self):
+        dt = datetime.today()
+        dt_iso = dt.isoformat()
+        ct = City(id="678", created_at=dt_iso, updated_at=dt_iso)
+        self.assertEqual(ct.id, "678")
+        self.assertEqual(ct.created_at, dt)
+        self.assertEqual(ct.updated_at, dt)
 
     def test_instantiation_with_None_kwargs(self):
         with self.assertRaises(TypeError):
