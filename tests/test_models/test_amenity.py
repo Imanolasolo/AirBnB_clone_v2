@@ -82,14 +82,14 @@ class TestAmenity_instantiation(unittest.TestCase):
         am = Amenity(None)
         self.assertNotIn(None, am.__dict__.values())
 
-    #def test_instantiation_with_kwargs(self):
-       # """instantiation with kwargs test method"""
-        #dt = datetime.today()
-        #dt_iso = dt.isoformat()
-        #am = Amenity(id="678", created_at=dt_iso, updated_at=dt_iso)
-        #self.assertEqual(am.id, "678")
-        #self.assertEqual(am.created_at, dt)
-        #self.assertEqual(am.updated_at, dt)
+    def test_instantiation_with_kwargs(self):
+        """instantiation with kwargs test method"""
+        dt = datetime.today()
+        dt_iso = dt.isoformat()
+        am = Amenity(id="678", created_at=dt_iso, updated_at=dt_iso)
+        self.assertEqual(am.id, "678")
+        self.assertEqual(am.created_at, dt)
+        self.assertEqual(am.updated_at, dt)
 
     def test_instantiation_with_None_kwargs(self):
         with self.assertRaises(TypeError):
