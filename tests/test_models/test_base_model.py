@@ -28,7 +28,7 @@ class test_basemodel(unittest.TestCase):
     def tearDown(self):
         try:
             os.remove('file.json')
-        except:
+        except IOError:
             pass
 
     def test_default(self):
@@ -101,6 +101,7 @@ class test_basemodel(unittest.TestCase):
         n = new.to_dict()
         new = BaseModel(**n)
         self.assertFalse(new.created_at == new.updated_at)
+
 
 class TestBaseModel_instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the BaseModel class."""
