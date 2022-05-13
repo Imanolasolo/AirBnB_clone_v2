@@ -9,7 +9,6 @@ from datetime import datetime
 from time import sleep
 
 
-
 class test_Amenity(test_basemodel):
     """ """
 
@@ -23,7 +22,7 @@ class test_Amenity(test_basemodel):
         """ """
         new = self.value()
         self.assertEqual(type(new.name), str)
-# A partir de aqui cambios
+
 
 class TestAmenity_instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the Amenity class."""
