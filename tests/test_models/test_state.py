@@ -23,7 +23,7 @@ class test_state(test_basemodel):
         new = self.value()
         self.assertEqual(type(new.name), str)
 
-# a partir de aqui cambios
+
 class TestState_instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the State class."""
 
