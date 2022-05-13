@@ -18,6 +18,7 @@ from models.state import State
 from models.user import User
 import json
 import pep8
+import re
 FileStorage = file_storage.FileStorage
 classes = {"Amenity": Amenity, "BaseModel": BaseModel, "City": City,
            "Place": Place, "Review": Review, "State": State, "User": User}
@@ -37,8 +38,8 @@ class test_fileStorage(unittest.TestCase):
     def tearDown(self):
         """ Remove storage file at end of tests """
         try:
-            os.remove('file.json')
-        except IndexError:
+            os.remove("file.json")
+        except IOError:
             pass
 
     def test_obj_list_empty(self):
