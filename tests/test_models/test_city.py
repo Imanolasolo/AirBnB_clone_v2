@@ -9,6 +9,7 @@ from datetime import datetime
 from time import sleep
 from models.city import City
 
+
 class test_City(test_basemodel):
     """ """
 
@@ -28,7 +29,7 @@ class test_City(test_basemodel):
         new = self.value()
         self.assertEqual(type(new.name), str)
 
-# a partir de aqui cambios    
+
 class TestCity_instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the City class."""
 
@@ -207,4 +208,4 @@ class TestCity_to_dict(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()    
+    unittest.main()
