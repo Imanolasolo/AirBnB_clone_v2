@@ -8,14 +8,15 @@
 #           <3915@holbertonschool.com>
 
 """ Module for testing file storage"""
+import inspect
 import unittest
-from models.base_model import BaseModel
-from models import storage
+import re
 import os
+import json
+import pep8
 import models
 from datetime import datetime
-import inspect
-import models
+from models import storage
 from models.engine import file_storage
 from models.amenity import Amenity
 from models.base_model import BaseModel
@@ -24,9 +25,7 @@ from models.place import Place
 from models.review import Review
 from models.state import State
 from models.user import User
-import json
-import pep8
-import re
+
 FileStorage = file_storage.FileStorage
 classes = {"Amenity": Amenity, "BaseModel": BaseModel, "City": City,
            "Place": Place, "Review": Review, "State": State, "User": User}
