@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+# File: base_model.py
+# Main Authors: Justin Majetich - Ezra Nobrega
+# email(s): <justinmajetich@gmail.com>
+#           <ezra.nobrega@outlook.com>
+# Collaborators: Imanol Asolo - Alex Arévalo
+# email(s): <3848@holbertonschool.com>
+#           <3915@holbertonschool.com>
+
 """This module defines a base class for all models in our hbnb clone"""
 import uuid
 from datetime import datetime
