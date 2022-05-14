@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# File: console.py
+# File: amenity.py
 # Main Authors: Justin Majetich - Ezra Nobrega
 # email(s): <justinmajetich@gmail.com>
 #           <ezra.nobrega@outlook.com>
