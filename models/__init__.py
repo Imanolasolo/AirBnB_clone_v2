@@ -7,9 +7,14 @@
 # email(s): <3848@holbertonschool.com>
 #           <3915@holbertonschool.com>
 
-"""This module instantiates an object of class FileStorage"""
+"""This module is A unique FileStorage/DBStorage instance for all models"""
+import os
+
+from models.engine.db_storage import DBStorage
 from models.engine.file_storage import FileStorage
 
+storage = DBStorage() if os.getenv(
+    'HBNB_TYPE_STORAGE') == 'db' else FileStorage()
 
-storage = FileStorage()
+
 storage.reload()
