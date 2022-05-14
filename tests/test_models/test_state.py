@@ -1,5 +1,13 @@
 #!/usr/bin/python3
-""" """
+# File: test_state.py
+# Main Authors: Justin Majetich - Ezra Nobrega
+# email(s): <justinmajetich@gmail.com>
+#           <ezra.nobrega@outlook.com>
+# Collaborators: Imanol Asolo - Alex Arévalo
+# email(s): <3848@holbertonschool.com>
+#           <3915@holbertonschool.com>
+
+"""This Module Defines Unittest for models/state.py"""
 from tests.test_models.test_base_model import test_basemodel
 from models.state import State
 import os
