@@ -7,7 +7,7 @@
 # email(s): <3848@holbertonschool.com>
 #           <3915@holbertonschool.com>
 
-"""This Module Defines Unittest for models/base_model.py"""
+"""This Module Defines Unittest for models/base_model.py """
 from models.base_model import BaseModel
 import unittest
 from datetime import datetime
