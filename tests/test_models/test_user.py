@@ -53,8 +53,8 @@ class TestUser_instantiation(unittest.TestCase):
     def test_no_args_instantiates(self):
         self.assertEqual(User, type(User()))
 
-    #def test_new_instance_stored_in_objects(self):
-        #self.assertIn(User(), models.storage.all().values())
+    # def test_new_instance_stored_in_objects(self):
+        # self.assertIn(User(), models.storage.all().values())
 
     def test_id_is_public_str(self):
         self.assertEqual(str, type(User().id))
@@ -82,11 +82,11 @@ class TestUser_instantiation(unittest.TestCase):
         us2 = User()
         self.assertNotEqual(us1.id, us2.id)
 
-    #def test_two_users_different_created_at(self):
-        #us1 = User()
-        #sleep(0.05)
-        #us2 = User()
-        #self.assertLess(us1.created_at, us2.created_at)
+    # def test_two_users_different_created_at(self):
+        # us1 = User()
+        # sleep(0.05)
+        # us2 = User()
+        # self.assertLess(us1.created_at, us2.created_at)
 
     def test_two_users_different_updated_at(self):
         us1 = User()
@@ -110,7 +110,6 @@ class TestUser_instantiation(unittest.TestCase):
         us = User(None)
         self.assertNotIn(None, us.__dict__.values())
 
-    
     def test_instantiation_with_None_kwargs(self):
         with self.assertRaises(TypeError):
             User(id=None, created_at=None, updated_at=None)
