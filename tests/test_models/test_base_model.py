@@ -86,11 +86,11 @@ class test_basemodel(unittest.TestCase):
         with self.assertRaises(TypeError):
             new = self.value(**n)
 
-    #def test_kwargs_one(self):
-        #""" """
-        #n = {'Name': 'test'}
-        #with self.assertRaises(KeyError):
-            #new = self.value(**n)
+    # def test_kwargs_one(self):
+        # """ """
+        # n = {'Name': 'test'}
+        # with self.assertRaises(KeyError):
+            # new = self.value(**n)
 
     def test_id(self):
         """ """
@@ -117,8 +117,8 @@ class TestBaseModel_instantiation(unittest.TestCase):
     def test_no_args_instantiates(self):
         self.assertEqual(BaseModel, type(BaseModel()))
 
-    #def test_new_instance_stored_in_objects(self):
-        #self.assertIn(BaseModel(), models.storage.all().values())
+    # def test_new_instance_stored_in_objects(self):
+        # self.assertIn(BaseModel(), models.storage.all().values())
 
     def test_id_is_public_str(self):
         self.assertEqual(str, type(BaseModel().id))
@@ -162,26 +162,26 @@ class TestBaseModel_instantiation(unittest.TestCase):
         bm = BaseModel(None)
         self.assertNotIn(None, bm.__dict__.values())
 
-    #def test_instantiation_with_kwargs(self):
-        #"""instantiation with kwargs test method"""
-        #dt = datetime.today()
-        #dt_iso = dt.isoformat()
-        #bm = BaseModel(id="678", created_at=dt_iso, updated_at=dt_iso)
-        #self.assertEqual(bm.id, "678")
-        #self.assertEqual(bm.created_at, dt)
-        #self.assertEqual(bm.updated_at, dt)
+    # def test_instantiation_with_kwargs(self):
+        # """instantiation with kwargs test method"""
+        # dt = datetime.today()
+        # dt_iso = dt.isoformat()
+        # bm = BaseModel(id="678", created_at=dt_iso, updated_at=dt_iso)
+        # self.assertEqual(bm.id, "678")
+        # self.assertEqual(bm.created_at, dt)
+        # self.assertEqual(bm.updated_at, dt)
 
     def test_instantiation_with_None_kwargs(self):
         with self.assertRaises(TypeError):
             BaseModel(id=None, created_at=None, updated_at=None)
 
-    #def test_instantiation_with_args_and_kwargs(self):
-        #dt = datetime.today()
-        #dt_iso = dt.isoformat()
-        #bm = BaseModel("12", id="678", created_at=dt_iso, updated_at=dt_iso)
-        #self.assertEqual(bm.id, "678")
-        #self.assertEqual(bm.created_at, dt)
-        #self.assertEqual(bm.updated_at, dt)
+    # def test_instantiation_with_args_and_kwargs(self):
+        # dt = datetime.today()
+        # dt_iso = dt.isoformat()
+        # bm = BaseModel("12", id="678", created_at=dt_iso, updated_at=dt_iso)
+        # self.assertEqual(bm.id, "678")
+        # self.assertEqual(bm.created_at, dt)
+        # self.assertEqual(bm.updated_at, dt)
 
 
 class TestBaseModel_save(unittest.TestCase):
