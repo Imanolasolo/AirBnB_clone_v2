@@ -38,8 +38,8 @@ class TestState_instantiation(unittest.TestCase):
     def test_no_args_instantiates(self):
         self.assertEqual(State, type(State()))
 
-    #def test_new_instance_stored_in_objects(self):
-        #self.assertIn(State(), models.storage.all().values())
+    # def test_new_instance_stored_in_objects(self):
+        # self.assertIn(State(), models.storage.all().values())
 
     def test_id_is_public_str(self):
         self.assertEqual(str, type(State().id))
@@ -85,17 +85,17 @@ class TestState_instantiation(unittest.TestCase):
         self.assertIn("'created_at': " + dt_repr, ststr)
         self.assertIn("'updated_at': " + dt_repr, ststr)
 
-    #def test_args_unused(self):
-        #st = State(None)
-        #self.assertNotIn(None, st.__dict__.values())
+    # def test_args_unused(self):
+        # st = State(None)
+        # self.assertNotIn(None, st.__dict__.values())
 
-    #def test_instantiation_with_kwargs(self):
-        #dt = datetime.today()
-        #dt_iso = dt.isoformat()
-        #st = State(id="678", created_at=dt_iso, updated_at=dt_iso)
-        #self.assertEqual(st.id, "678")
-        #self.assertEqual(st.created_at, dt)
-        #self.assertEqual(st.updated_at, dt)
+    # def test_instantiation_with_kwargs(self):
+        # dt = datetime.today()
+        # dt_iso = dt.isoformat()
+        # st = State(id="678", created_at=dt_iso, updated_at=dt_iso)
+        # self.assertEqual(st.id, "678")
+        # self.assertEqual(st.created_at, dt)
+        # self.assertEqual(st.updated_at, dt)
 
     def test_instantiation_with_None_kwargs(self):
         with self.assertRaises(TypeError):
