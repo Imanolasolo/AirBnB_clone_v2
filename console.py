@@ -15,7 +15,7 @@ import os
 import uuid
 from datetime import datetime
 
-from models.base_model import BaseModel
+from models.base_model import BaseModel, Base
 from models import storage
 from models.user import User
 from models.place import Place
@@ -125,6 +125,7 @@ class HBNBCommand(cmd.Cmd):
         """ Overrides the emptyline method of CMD """
         return False
 
+    
     def do_create(self, args):
         """ Create an object of any class"""
         ignored_attrs = ('id', 'created_at', 'updated_at', '__class__')
@@ -184,6 +185,7 @@ class HBNBCommand(cmd.Cmd):
             new_instance.save()
             print(new_instance.id)
 
+    
     def help_create(self):
         """ Help information for the create method """
         print("Creates a class of any type")
