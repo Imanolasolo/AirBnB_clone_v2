@@ -1,12 +1,9 @@
 <p align="center">
 <img src="https://img.shields.io/badge/Made%20with-Python-blue.svg"/>
 <img src="https://img.shields.io/badge/SQL-blue.svg"/> 	
-<img src="https://img.shields.io/badge/Markdown-black.svg"/> <br>
-<img src="https://img.shields.io/github/repo-size/Imanolasolo/AirBnB_clone_v2"/>
-<img src="https://img.shields.io/github/languages/code-size/Imanolasolo/AirBnB_clone_v2.svg"/>
-<img src="https://img.shields.io/github/last-commit/Imanolasolo/AirBnB_clone_v2/main?style=round-square"/>	
+<img src="https://img.shields.io/badge/Markdown-black.svg"/>
 </p>
-	
+
 ---
 	
 # 0x00. AirBnB clone - The console
@@ -19,7 +16,7 @@ Thank you for visiting this repository which contain the `second step` towards b
 	
 ![hbnb](https://github.com/Alexoat76/AirBnB_clone/blob/main/assets/hbnb-logo.png?raw=true)
 	
-The project currently only implements the back-end `console & DataBase`. The goal of the project is to deploy on your server a simple copy of the `AirBnB website`.
+The project currently only implements the back-end `console & DBStorage`. The goal of the project is to deploy on your server a simple copy of the `AirBnB website`.
 
 # Getting Started :running:	
 <div style="text-align: justify">
@@ -58,7 +55,7 @@ The project currently only implements the back-end `console & DataBase`. The goa
 This repository contains the initial stage of a student project to build a clone of the AirBnB website. This stage implements a backend interface, or console, to manage program data. Console commands allow the user to create, update, and destroy objects, as well as manage file storage. Using a system of JSON serialization/deserialization, storage is persistent between sessions.
 
 ---
-<center><h3>Repository Contents by Project Task</h3> </center>
+<center><h3>Original Repository Contents by Project Task</h3> </center>
 
 | Tasks | Files | Description |
 | ----- | ----- | ------ |
