@@ -1,8 +1,3 @@
-/*File: setup_mysql_dev.sql
-Authors: Imanol Asolo - Alex Arévalo
-email(s): <3848@holbertonschool.com>        
-          <3915@holbertonschool.com>*/
-          
 -- Script that prepares a MySQL server for the project
 CREATE DATABASE IF NOT EXISTS hbnb_dev_db;
 CREATE USER IF NOT EXISTS 'hbnb_dev'@'localhost' IDENTIFIED BY 'hbnb_dev_pwd';
