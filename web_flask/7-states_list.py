@@ -7,7 +7,7 @@ Routes:
 from models import storage
 from flask import Flask
 from flask import render_template
-
+from models import *
 app = Flask(__name__)
 
 
@@ -16,12 +16,11 @@ def states_list():
     """Displays an HTML page with a list of all State objects in DBStorage.
     States are sorted by name.
     """
-    states = storage.all("states")
-    return render_template("7-states_list.html", states=states)
-
+    states = sorted(list(storage.all("State").values()), key=lambda x: x.name)
+    return render_template('7-states_list.html', states=states)
 
 @app.teardown_appcontext
-def teardown(exc):
+def teardown(exception):
     """Remove the current SQLAlchemy session."""
     storage.close()
 
