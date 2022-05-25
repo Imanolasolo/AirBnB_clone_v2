@@ -1,6 +1,6 @@
 #!usr/bin/python3
 # File: 7-states_list.py
-# Author: Imanol Asolo
+# Author: Imanol Asolo.
 
 
 """"
